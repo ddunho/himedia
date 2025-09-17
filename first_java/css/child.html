@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div > :first-child{
+            color: green;
+        }
+        div > :nth-child(2){
+            color: red
+        }
+        div > :nth-last-child(2){
+            color: pink;
+        }
+        div > :last-child{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>첫 번째 요소</p>
+        <p>두 번째 요소</p>
+        <p>세 번째 요소</p>
+        <p>네 번째 요소</p>
+    </div>
+</body>
+</html>
