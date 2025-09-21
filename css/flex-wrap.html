@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container{
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            /* wrap-reverse : 역순으로 배치 */
+            align-content: space-around;
+            /*컨텐츠를 기준으로 균등하게 분배  */
+            /* space-between: 컨텐츠를 양 끝으로 놓고, 그 사이를 균등하게 분배 */
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: #75a99c;
+            border-radius: 8px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+
+</body>
+</html>
