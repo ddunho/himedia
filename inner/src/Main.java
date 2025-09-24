@@ -1,14 +1,17 @@
+import java.util.ArrayList;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-       //ExampleInterface exampleInterface = new ExampleInterface();
-       //원래 이렇게 만드는데, interface가 구현이 안되어있음 > 바로 구현 가능(1번만)
-        ExampleInterface exampleInterface = new ExampleInterface(){
-            @Override
-            public void exampleMethod(){
-                System.out.println("hello");
-            }
-        };
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        arrayList.add(1);
+        arrayList.add(2);
+        arrayList.add(3);
+        arrayList.add(4);
+
+        arrayList.stream().map(n-> n+3).forEach(n->
+            System.out.println(n)
+        );
     }
 }
