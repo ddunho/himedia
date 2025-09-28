@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* columns : 가로, rows : 세로 */
+        #container{
+            display: grid;
+            grid-template-columns: 300px 300px 300px; 
+            grid-template-rows: 200px 200px 200px;
+            gap: 16px;
+            align-items: start;
+            /* start, center, end 각각 위 중간 아래로 이동
+            justify-items는 수평으로 정렬 */
+            /* item이 숫자여서 숫자크기에 맞게 맞춰짐 */
+        }
+        .item{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>
