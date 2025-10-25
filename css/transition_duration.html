@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            width: 100px;
+            height: 100px;
+            background-color: #71a699;
+            /* 여기에 duration 넣으면 돌아갈때도 느려짐 */
+        }
+        /* 1초에 걸쳐서 작동*/
+        #box1:hover{
+            transform: scale(1.5);
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+</body>
+</html>
