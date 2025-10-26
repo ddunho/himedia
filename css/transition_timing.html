@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            width: 100px;
+            height: 100px;
+            background-color: #71a699;
+        }
+        #box1:hover{
+            width: 500px;
+            height: 500px;
+            transition-duration: 1s;
+            
+            transition-timing-function: linear;
+            /* ease가 기본값(처음엔 느렸다가 가속)
+            linear는 일정하게 커짐 
+            ease-out : 빠르게시작해서 마지막에 느리게
+            cubic-bezier.com에 가면 커스텀 가능*/
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+</body>
+</html>
