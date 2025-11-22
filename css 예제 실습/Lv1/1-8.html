@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        /* 포지션은 워터마크 달떄만 사용 > 선생님이셨으면 글자부분 div 2개 사용 */
+        /* 인테리어란? 하나랑 */
+        /* 김작가(왼쪽정렬) 2024.01.01(오른쪽정렬) */
+        #container{
+            width: 160px;
+            height: 240px;
+            background-image: url(https://lh3.googleusercontent.com/proxy/cc7bUUHrz8oI81xLcOXlxmfjxN60uyPqiQbRDVQjf0CNoYxmykzRg2D6aN9BS1_tSwb8_eNXrK-ikaa71Ku5XXvUiDSBAf_-zcnWobnl-0-VSw);
+            background-size: cover;
+            border-radius: 8px;
+            position: relative;
+            margin: 16px 0px 0px 16px;
+        }
+        #container > div{
+            width: 100%;
+            height: 68px;
+            background-color: #218cf7;
+            position: absolute;
+            bottom: 0;
+            color: white;
+            border-radius: 0px 0px 8px 8px;
+            font-weight: bold;
+        }
+        #div1{
+            padding: 8px 0px 0px 8px;
+
+        }
+        #div2{
+            position: absolute;
+            left: 10px;
+            bottom:0px;
+            font-size: 14px;
+            padding: 0px 0px 8px 0px;
+        }
+        #div3{
+            position: absolute;
+            font-size: 14px;
+            bottom:0px;
+            right: 0px;
+            padding: 0px 8px 8px 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="box">
+            <div id="div1">인테리어란?</div>
+            <div id="div2">김작가</div>
+            <div id="div3">2024.01.01</div>
+        </div>
+    </div>
+
+</body>
+</html>
