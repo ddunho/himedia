@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        #container{
+            width: 250px;
+            height: 225px;
+            background-color: #218cf7;
+            border-radius: 8px 8px 0px 0px;
+            font-size: 12px;
+            position: relative;
+            margin: 16px 0px 0px 16px;
+            box-sizing: border-box;
+        }
+        #box1{
+            width: 250px;
+            height: 75px;
+            background-color: white;
+            border: 1px solid #218cf7;
+            position: absolute;
+            bottom: 0;
+            box-sizing: border-box;
+        }
+        #box1 > p:first-child{
+            padding: 6px 0px 0px 8px;
+        }
+        #box1 > p:last-child{
+        }
+        #box2{
+            width: 66px;
+            height: 40px;
+            background-color: white;
+            display: flex;
+            position: absolute;
+            bottom: 6px;
+            left: 8px;
+            align-items: center;
+            gap: 8px;
+        }
+        #box2 > div{
+            width: 24px;
+            height: 24px;
+            background-color: #218cf7;
+            border-radius: 999px;
+        }
+        #box2 > p{
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1">
+            <p>안녕하세요. 텍스트입니다.</p>
+            <div id="box2">
+                <div id="box3"></div>
+                <p>휴양죠</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
