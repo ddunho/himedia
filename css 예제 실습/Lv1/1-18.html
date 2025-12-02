@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        #container{
+            width: 322px;
+            height: 100px;
+            border-radius: 8px;
+            background-color: #cee6fd;
+            display: flex;
+            margin: 16px 0px 0px 16px;
+        }
+        #box1{
+            width: 160px;
+            height: 100px;
+            border-radius: 8px;
+            background-color: #218cf7;
+        }
+        #box2{
+            width: 172px;
+            height: 100px;
+            border-radius: 8px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            
+        }
+        #box2 > div{
+            width: 96px;
+            height: 19px;
+            border-radius: 2px;
+            background-color: #218cf7;
+            color: white;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box2 > p:first-child{
+            margin: 8px 0px 0px 0px;
+        }
+        #box2 > p:last-child{
+            font-size: 14px;
+            color: #8b8b8b;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1"></div>
+        <div id="box2">
+            <div>반가워요!</div>
+            <p>좋은하루보내세요!</p>
+            <p>날씨가 좋네요!</p>
+        </div>
+    </div>
+</body>
+</html>
