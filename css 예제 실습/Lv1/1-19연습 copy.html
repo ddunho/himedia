@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        div{
+            width: 600px;
+            height: 80px;
+            background-color: #218cf7;
+            color: white;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            width: 600px;
+            height: 80px;
+        }
+        ul > li:nth-child(1) ~ li::before{
+            display: block;
+            content: "";
+
+            width: 4px;
+            height: 4px;
+            background-color: white;
+            border-radius: 999px;
+        }
+        ul > li:nth-child(1) ~ li{
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>웹툰홈</li>
+            <li>요일별</li>
+            <li>베스트</li>
+        </ul>
+    </div>
+</body>
+</html>
