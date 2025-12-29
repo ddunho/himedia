@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        /* 헤더 */
+        header{
+            display: flex;
+            width: 100%;
+            height: 60px;
+            background-color: #218cf7;
+            font-weight: bold;
+            color: white;
+            justify-content: space-around;
+            align-items: center;
+        }
+        header > p:nth-child(1){
+            font-size: 24px;
+        }
+        /* 메인 */
+        main{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            width: 1200px;
+            min-height: calc(100vh - 120px);
+        }
+        #di1{
+            margin-top: 80px;
+            width: 768px;
+            height: 681px;
+            border-radius: 8px;
+            border: 1px solid #d2d2d2;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+        #di2{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #di3 > input {
+            width: 736px;
+            height: 49px;
+            border-radius: 8px;
+            border: 1px solid #d2d2d2;
+            color: aqua;
+            margin: 16px 0px 16px 0px;
+            box-sizing: border-box;
+        }
+        #di4{
+            width: 736px;
+            box-sizing: border-box;
+            margin-bottom: 16px ;
+        }
+        #p1{
+            font-weight: 300;
+            font-size: 14px;
+            color: #676767;
+        }
+        #di5{
+            display: flex;
+            width: 736px;
+            height: 40px;
+            justify-content: space-between;
+            box-sizing: border-box;
+            margin-top: 16px;
+        }
+        button{
+            width: 120px;
+            height: 40px;
+            border-radius: 8px;
+            border: 1px solid #d2d2d2;
+        }
+        /* footer */
+        footer{
+            width: 100%;
+            height: 60px;
+            background-color: #218cf7;
+            font-weight: bold;
+            color: white;
+        }
+        button:hover{
+            background-color: orange;
+        }
+        button:active{
+            background-color: red;
+        }
+        #le{
+            width: 100%;
+            display: flex;
+            justify-content: left;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        a:hover{
+            color: orange;
+        }
+        a:active{
+            color: red;
+        }
+
+        #di4 > #editor > .ql-editor{
+            height: 450px;
+        }
+        @media(max-width : 1000px){
+            header{
+            display: flex;
+            width: 100%;
+            height: 60px;
+            background-color: #218cf7;
+            font-weight: bold;
+            color: white;
+            justify-content: space-around;
+            align-items: center;
+            box-sizing: border-box;
+            font-size: 24px;
+        }
+        /* 메인 */
+        main{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            width: 350px;
+            min-height: calc(100vh - 120px);
+            padding: 0 16px;
+            box-sizing: border-box;
+        }
+        #di1{
+            margin-top: 80px;
+            width: 400px;
+            height: 681px;
+            border-radius: 8px;
+            border: 1px solid #d2d2d2;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+        #di2{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #di3 > input {
+            width: 350px;
+            height: 49px;
+            border-radius: 8px;
+            border: 1px solid #d2d2d2;
+            color: aqua;
+            margin: 16px 0px 16px 0px;
+            box-sizing: border-box;
+        }
+        #di4{
+            width: 350px;
+            box-sizing: border-box;
+            margin-bottom: 16px ;
+        }
+        #p1{
+            font-weight: 300;
+            font-size: 14px;
+            color: #676767;
+        }
+        #di5{
+            display: flex;
+            width: 350px;
+            height: 40px;
+            justify-content: space-between;
+            box-sizing: border-box;
+            margin-top: 16px;
+        }
+        button{
+            width: 120px;
+            height: 30px;
+            border-radius: 8px;
+            border: 1px solid #d2d2d2;
+        }
+        /* footer */
+        footer{
+            width: 100%;
+            height: 60px;
+            background-color: #218cf7;
+            font-weight: bold;
+            color: white;
+        }
+        button:hover{
+            background-color: orange;
+        }
+        button:active{
+            background-color: red;
+        }
+        #le{
+            width: 100%;
+            display: flex;
+            justify-content: left;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        a:hover{
+            color: orange;
+        }
+        a:active{
+            color: red;
+        }
+
+        #di4 > #editor > .ql-editor{
+            height: 450px;
+        }
+        }
+
+            </style>
+</head>
+<body>
+    <header>
+        <a href="./1-1.html">KINGMAKERS</a>
+        <p>로그인</p>
+    </header>
+    <main>
+        <div id="di1">
+            <div id="d2">글 수정
+            </div>
+            <div id="di3">
+                <input type="text" placeholder="제목입니다.">
+            </div>
+                <div id="di4"> <!--Quill Editor-->
+                <!-- Include stylesheet -->
+                    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
+
+                    <!-- Create the editor container -->
+                    <div id="editor">
+                        <p id="p1">Compose an epic..</p>
+                    </div>
+
+                    <!-- Include the Quill library -->
+                    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+
+                    <!-- Initialize Quill editor -->
+                    <script>
+                    const quill = new Quill('#editor', {
+                        theme: 'snow'
+                    });
+                    </script>
+                </div>
+            <div id="di5">
+                <button>취소</button>
+                <button>작성</button>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
