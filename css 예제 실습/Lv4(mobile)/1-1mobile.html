@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        /* 헤더 */
+        header{
+            display: flex;
+            width: 100%;
+            height: 60px;
+            background-color: #218cf7;
+            font-weight: bold;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 13px 0px 8px;
+            box-sizing: border-box;
+        }
+        header > p:nth-child(1){
+            font-size: 14px;
+        }
+        /* 메인 */
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            min-height: calc(100vh - 120px);
+            padding: 0px 16px 0px 16px;
+            box-sizing: border-box;
+        }
+        main > p {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 80px 0px 40px 0px;
+        }
+        main > div > p{
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        main > div > input{
+            width: calc(100vw - 32px);
+            height: 40px;
+            border-radius: 8px;
+            border: 1px solid #6c6c6c;
+            box-sizing: border-box;
+        }
+        button{
+            width: calc(100vw - 32px);
+            height: 60px;
+            font-size: 14px;
+            background-color: #218cf7;
+            color: white;
+            border: 0px solid #218cf7;
+            cursor: pointer; 
+            /* cursor : 버튼 누를 수 있게 해주는 속성 */
+            box-sizing: border-box;
+        }
+        #ri{
+            width: calc(100vw - 32px);
+            display: flex;
+            justify-content: right;
+            font-size: 14px;
+            margin: 16px 0px 16px 0px;
+            box-sizing: border-box;
+        }
+        /* footer */
+        footer{
+            width: 100%;
+            height: 60px;
+            background-color: #218cf7;
+            font-weight: bold;
+            color: white;
+        }
+        button:hover{
+            background-color: orange;
+        }
+        button:active{
+            background-color: red;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            color: orange;
+        }
+        a:active{
+            color: red;
+        }
+        .in1{
+            width: calc(100vw - 32px);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <p>KINGMAKERS</p>
+        <p>로그인</p>
+    </header>
+    <main>
+        <p>로그인</p>
+        <div class="in1">
+            <p>아이디</p>
+            <input type="text" style="margin-bottom: 24px;">
+        </div>
+        <div class="in1">
+            <p>비밀번호</p>
+            <input type="text">
+        </div>
+        <div id="ri">
+            <a href="./1-2.html">회원가입</a>
+        </div>
+        <div class="in1">
+            <button type="submit">로그인</button>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
