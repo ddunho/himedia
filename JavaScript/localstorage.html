@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>클릭</button>
+
+    <script>
+        const btnE1 = document.querySelector("button");
+
+        btnE1.addEventListener("click", ()=>{
+            localStorage.newData = "Hello";
+        }) 
+        //console 옆 application > localstorage에서 확인 가능
+        //localstorage에 저장된건 컴퓨터나 브라우저가 꺼져도 저장되어있음
+        //저장 목적 : 로그인상태, 테마 등
+
+        //불러올때 
+        console.log(localStorage.newData); //Hello 출력
+    </script>
+</body>
+</html>
